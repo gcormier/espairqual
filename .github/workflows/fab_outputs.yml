@@ -12,7 +12,7 @@ jobs:
   FabricationOutputs:
     env:
       BaseFileName: espairqual
-      Timezone: America/New_york
+      Timezone: America/Toronto
       OutputFolder: PCB/KiBotOutput
     runs-on: ubuntu-latest
 
@@ -35,10 +35,10 @@ jobs:
       - name: KiBot
         uses: INTI-CMNB/KiBot@v2_k6
         with:
-          config: pcb/.kibot/espairqual.kibot.yaml
+          config: pcb/.kibot/kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: pcb/espairqual.kicad_sch
-          board: pcb/espairqual.kicad_pcb
+          schema: pcb/${{ env.BaseFileName }}.kicad_sch
+          board: pcb/${{ env.BaseFileName }}.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
       - name: Archive production artifacts
