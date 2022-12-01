@@ -26,5 +26,5 @@ fp-info-cache
 *.csv
 
 
-*-backups/*
+pcb/*-backups/*
 *.kicad_prl
