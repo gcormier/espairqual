@@ -1,9 +1,6 @@
 esp32:
-  board: esp32-s2-saola-1
-  framework:
-    type: arduino
-    version: 2.0.3
-    platform_version: 4.4.0
+  platform: ESP32
+  board: esp32dev
 
 esphome:
   name: espairqual
@@ -27,87 +24,24 @@ logger:
 api:
 
 ota:
-binary_sensor:
-  - platform: gpio
-    name: "INPUT1"
-    pin:
-      number: 1
-      inverted: True
-      mode: INPUT_PULLDOWN
-  
-  - platform: gpio 
-    name: "INPUT2"
-    pin:
-      number: 2
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT3"
-    pin:
-      number: 3
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT4"
-    pin:
-      number: 4
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT5"
-    pin:
-      number: 5
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT6"
-    pin:
-      number: 6
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT7"
-    pin:
-      number: 7
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT8"
-    pin:
-      number: 8
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT9"
-    pin:
-      number: 9
-      inverted: True
-      mode: INPUT_PULLDOWN
-        
-  - platform: gpio 
-    name: "INPUT10"
-    pin:
-      number: 12
-      inverted: True
-      mode: INPUT_PULLDOWN
 
-  - platform: gpio 
-    name: "INPUT11"
-    pin:
-      number: 11
-      inverted: True
-      mode: INPUT_PULLDOWN
 
-  - platform: gpio 
-    name: "INPUT12"
-    pin:
+uart:
+  rx_pin: GPIO21
+  tx_pin: GPIO23
+  baud_rate: 9600
+
+sensor:
+  - platform: pmsx003
+    type: PMS5003T
+
+    pm_2_5:
+      name: "Particulate Matter <2.5µm Concentration"
+    temperature:
+      name: "PMS Temperature"
+    humidity:
+      name: "PMS Humidity"
+    update_interval: 60000ms
       number: 10
       inverted: True
       mode: INPUT_PULLDOWN
