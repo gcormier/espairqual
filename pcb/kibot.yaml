@@ -140,7 +140,7 @@ outputs:
     options:
       view: top
       rotate_x: 4
-      rotate_y: 4
+      rotate_y: -4
       rotate_z: 4
       ray_tracing: true
       auto_crop: true
