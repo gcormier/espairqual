@@ -1,4 +1,4 @@
-<img src=images/espairqual.png width=700px />
+<img src=images/espairqual.png width=700px /><img src=images/espairqual-3D.png width=700px />
 
 # espairqual
 espairqual is an esphome interface for PMSx003 particulate matter (PM) sensors.
