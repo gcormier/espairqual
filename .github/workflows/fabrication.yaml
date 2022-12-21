@@ -17,16 +17,4 @@ on:
 
 jobs:
   fabrication:
-    name: fabrication
     uses: gcormier/kicad-jobs/.github/workflows/kicad-fabrication.yaml@main
-  
-  push_render:
-    runs-on: ubuntu-latest
-    name: render
-    needs: fabrication
-    steps:
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Automatic update"
-          file_pattern: '*.png'
-          
