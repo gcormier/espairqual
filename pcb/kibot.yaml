@@ -145,4 +145,4 @@ outputs:
       ray_tracing: true
       auto_crop: true
       transparent_background: true
-      
+      output: "espairqual-3D.png"
