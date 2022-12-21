@@ -1,7 +1,16 @@
+# Gerber and drill files for JLCPCB, without stencil
+# URL: https://jlcpcb.com/
+# Based on setting used by Gerber Zipper (https://github.com/g200kg/kicad-gerberzipper)
 kibot:
   version: 1
 
 filters:
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    rotations:
+      - ["^ESP32-WROOM-", -90.0]
+
   - name: only_jlc_parts
     comment: 'Only parts with JLC (LCSC) code'
     type: generic
@@ -14,7 +23,7 @@ variants:
     comment: 'Just a place holder for the rotation filter'
     type: kibom
     variant: rotated
-    pre_transform: _rot_footprint
+    pre_transform: fix_rotation
 
 outputs:
   - name: JLCPCB_gerbers
@@ -39,8 +48,6 @@ outputs:
       subtract_mask_from_silk: true
       inner_extension_pattern: '.gp%n'
     layers:
-      # Note: a more generic approach is to use 'copper' but then the filenames
-      # are slightly different.
       - F.Cu
       - B.Cu
       - F.SilkS
@@ -67,7 +74,7 @@ outputs:
     type: compress
     dir: ./
     options:
-      output: espairqual-gerbers.zip
+      output: temp4c-gerbers.zip
       files:
         - from_output: JLCPCB_gerbers
           dest: /
@@ -88,7 +95,8 @@ outputs:
       format: CSV
       units: millimeters
       separate_files_for_front_and_back: false
-      only_smd: true
+      only_smd: false
+      use_aux_axis_as_origin: false
       columns:
         - id: Ref
           name: Designator
@@ -122,3 +130,8 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
+
+  - name: 'STEP'
+    comment: "STEP file"
+    type: step
+    
