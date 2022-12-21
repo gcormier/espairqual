@@ -134,4 +134,14 @@ outputs:
   - name: 'STEP'
     comment: "STEP file"
     type: step
-    
+
+  - name: 'Rendering'
+    type: render_3d
+    options:
+      rotate_x: 45
+      rotate_y: 45
+      rotate_z: 45
+      ray_tracing: true
+      auto_crop: true
+      transparent_background: true
+      
