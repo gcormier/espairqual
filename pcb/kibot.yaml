@@ -138,10 +138,10 @@ outputs:
   - name: 'Rendering'
     type: render_3d
     options:
-      view: 'Z'
-      rotate_x: 45
-      rotate_y: 45
-      rotate_z: 45
+      view: top
+      rotate_x: 4
+      rotate_y: 4
+      rotate_z: 4
       ray_tracing: true
       auto_crop: true
       transparent_background: true
