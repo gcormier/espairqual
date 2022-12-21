@@ -29,4 +29,4 @@ jobs:
         with:
           commit_message: "Automatic update"
           file_pattern: '*.png'
-          repository: ./images
+          
