@@ -3377,7 +3377,7 @@
   (gr_text "GPIO10\n\n\nGPIO\n\n\nGPIO3" (at 50.25 79.25 270) (layer "B.SilkS") (tstamp f37d6235-49bc-4f7d-9bc9-332e146d533a)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
-  (gr_text "espairqual\nv3" (at 53.5 70.25) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005ed453da)
+  (gr_text "espairqual\nv3.0\ngithub.com/gcormier/espairqual" (at 53.5 70.25) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005ed453da)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "UART\nSDA\nSCL\nGND" (at 27.58 93.5 -90) (layer "F.SilkS" knockout) (tstamp 4a0a149e-1173-4f92-b587-6e33310070b3)
