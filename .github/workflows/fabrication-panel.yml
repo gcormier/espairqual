@@ -1,9 +1,10 @@
 name: "Fabrication - Panel"
 on:
-
   workflow_dispatch:
   workflow_call:
-
+  push:
+    tags:
+    - pcb-v*
 jobs:
   fabrication-panel:
     uses: gcormier/kicad-jobs/.github/workflows/kicad-fabrication-panel.yaml@main
