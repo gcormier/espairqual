@@ -74,7 +74,7 @@ outputs:
     type: compress
     dir: ./
     options:
-      output: temp4c-gerbers.zip
+      output: espairqual-gerbers.zip
       files:
         - from_output: JLCPCB_gerbers
           dest: /
