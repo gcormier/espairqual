@@ -3295,7 +3295,7 @@
   (gr_text "GPIO10\n\n\nGPIO6\n\n\nGPIO3" (at 115.082652 82.744823 270) (layer "B.SilkS") (tstamp f37d6235-49bc-4f7d-9bc9-332e146d533a)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
-  (gr_text "espairqual\nv3.0\ngithub.com/gcormier/espairqual" (at 140.543525 65.02016 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005ed453da)
+  (gr_text "espairqual\nv4.0\ngithub.com/gcormier/espairqual" (at 140.543525 65.02016 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005ed453da)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "PMSx003" (at 137.621806 86.764843) (layer "F.SilkS") (tstamp 715fce7d-eabc-4890-84cb-4ac97ff235a5)
