@@ -56,35 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "solder_mask_bridge|27490811|73302205|9af8a326-c776-4bdb-95d2-983693946835|2e6fe5d8-85ff-497d-945d-4fab88a064cf",
-        "solder_mask_bridge|29765811|73002205|1f6d72e7-4580-43c2-8ee2-bea1665239f8|67916ad4-b9a2-4757-926f-e34cac489845",
-        "solder_mask_bridge|29765811|73952205|49952075-8be8-4865-aa15-4ce58fec928c|1f6d72e7-4580-43c2-8ee2-bea1665239f8",
-        "solder_mask_bridge|50600000|36580000|5ad4b8f8-b31c-4c11-8184-c087de7dc13d|988ce176-a0ed-41a8-a63c-9d58b1681684",
-        "solder_mask_bridge|50600000|36580000|a8d68e40-0125-49e9-ba05-1c54593bbeed|988ce176-a0ed-41a8-a63c-9d58b1681684",
-        "solder_mask_bridge|51200000|37730000|5ad4b8f8-b31c-4c11-8184-c087de7dc13d|63fe5bbc-d17d-4a90-90c5-2a77756c7933",
-        "solder_mask_bridge|51200000|37730000|a8d68e40-0125-49e9-ba05-1c54593bbeed|63fe5bbc-d17d-4a90-90c5-2a77756c7933",
-        "solder_mask_bridge|51400000|37730000|663d5e45-ed0a-4da8-9adb-c6b2e98609b4|5ad4b8f8-b31c-4c11-8184-c087de7dc13d",
-        "solder_mask_bridge|51400000|37730000|663d5e45-ed0a-4da8-9adb-c6b2e98609b4|a8d68e40-0125-49e9-ba05-1c54593bbeed",
-        "solder_mask_bridge|52000000|37730000|63fe5bbc-d17d-4a90-90c5-2a77756c7933|4cd3bbb9-a47a-4aee-be28-31d677353ec2",
-        "solder_mask_bridge|52000000|37730000|663d5e45-ed0a-4da8-9adb-c6b2e98609b4|4cd3bbb9-a47a-4aee-be28-31d677353ec2",
-        "solder_mask_bridge|52700000|37730000|abd8b01c-079b-4ac2-a3ba-54552f7d0a56|4cd3bbb9-a47a-4aee-be28-31d677353ec2",
-        "solder_mask_bridge|53000000|37730000|abd8b01c-079b-4ac2-a3ba-54552f7d0a56|1e4f1dbd-8d1b-4cd3-b472-2ca3d55bfabc",
-        "solder_mask_bridge|53700000|37730000|d715cadc-4aca-4b64-814c-ef0b763cf07a|1e4f1dbd-8d1b-4cd3-b472-2ca3d55bfabc",
-        "solder_mask_bridge|54200000|37730000|b035ff1b-0005-4524-8867-09ac34d6b241|d715cadc-4aca-4b64-814c-ef0b763cf07a",
-        "solder_mask_bridge|54500000|37730000|b035ff1b-0005-4524-8867-09ac34d6b241|c81105be-d2a5-41ce-935a-a92838264825",
-        "solder_mask_bridge|55200000|37730000|391dfa76-81e1-4b3d-8a2a-34a03fa63dc0|c81105be-d2a5-41ce-935a-a92838264825",
-        "solder_mask_bridge|55500000|37730000|391dfa76-81e1-4b3d-8a2a-34a03fa63dc0|19b0c9bc-0a0b-49cf-ba54-5e1b223da312",
-        "solder_mask_bridge|56000000|37730000|19b0c9bc-0a0b-49cf-ba54-5e1b223da312|3605e023-3adb-4cc2-a09f-e20db387cef0",
-        "solder_mask_bridge|56200000|37730000|b27044d8-6210-433c-8e0e-3be8b02eb964|19b0c9bc-0a0b-49cf-ba54-5e1b223da312",
-        "solder_mask_bridge|56800000|37730000|3605e023-3adb-4cc2-a09f-e20db387cef0|cc8038a3-bbfd-43ac-bdc7-0c5aa2d43726",
-        "solder_mask_bridge|56800000|37730000|b27044d8-6210-433c-8e0e-3be8b02eb964|cc8038a3-bbfd-43ac-bdc7-0c5aa2d43726",
-        "solder_mask_bridge|57000000|37730000|2fdcccd1-8503-4922-907c-8e39a18a18e2|3605e023-3adb-4cc2-a09f-e20db387cef0",
-        "solder_mask_bridge|57000000|37730000|2fdcccd1-8503-4922-907c-8e39a18a18e2|b27044d8-6210-433c-8e0e-3be8b02eb964",
-        "solder_mask_bridge|57600000|36580000|2fdcccd1-8503-4922-907c-8e39a18a18e2|b015e817-f429-4785-abe5-6604e391a6d0",
-        "solder_mask_bridge|57600000|36580000|cc8038a3-bbfd-43ac-bdc7-0c5aa2d43726|b015e817-f429-4785-abe5-6604e391a6d0",
-        "text_height|63250000|94250000|74d9074c-1b60-4929-95aa-28a7536fc6e3|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -125,7 +97,7 @@
         "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
+        "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
@@ -495,7 +467,36 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Small",
+        "pattern": "/*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Small",
+        "pattern": "D*"
+      },
+      {
+        "netclass": "Small",
+        "pattern": "Net*"
+      },
+      {
+        "netclass": "Small",
+        "pattern": "uncon*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/PWR*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -503,7 +504,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "espairqual.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
