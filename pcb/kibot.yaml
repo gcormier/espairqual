@@ -49,6 +49,8 @@ outputs:
       inner_extension_pattern: '.g%n'
     layers:
       - F.Cu
+      - In1.cu
+      - In2.cu
       - B.Cu
       - F.SilkS
       - B.SilkS
