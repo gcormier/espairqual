@@ -2,7 +2,7 @@ esp32:
   board: esp32dev
 
 esphome:
-  name: espairqual
+  name: espairqualoutput
 
 
 wifi:
@@ -36,8 +36,12 @@ sensor:
 
     pm_2_5:
       name: "Particulate Matter <2.5µm Concentration"
+    pm_10_0:
+      name: "Particulate Matter <10µm Concentration"
+    pm_1_0:
+      name: "Particulate Matter <1µm Concentration"
     temperature:
       name: "PMS Temperature"
     humidity:
       name: "PMS Humidity"
-    update_interval: 60000ms
+    update_interval: 120s

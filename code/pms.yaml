@@ -1,0 +1,63 @@
+# Sample espairqual config using the PlanTower PM3 sensor
+esp32:
+  board: esp32-c3-devkitm-1
+
+esphome:
+  name: plan-pm3
+  on_boot:
+    then:
+      - output.turn_on: gpio3_output
+      - output.turn_on: gpio5_output
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "espairqualFallback"
+    password: "espairqual"
+
+
+# Enable logging
+# do not use serial logging
+logger:
+  level: VERBOSE
+  baud_rate: 0
+
+api:
+
+ota:
+
+
+uart:
+  rx_pin: GPIO20
+  tx_pin: GPIO21
+  baud_rate: 9600
+
+output:
+  - platform: gpio
+    pin: GPIO3
+    id: gpio3_output
+
+  - platform: gpio
+    pin: GPIO5
+    id: gpio5_output
+
+
+sensor:
+  - platform: pmsx003
+    #type: PMSX003
+    pm_1_0:
+      name: "Particulate Matter <1.0µm Concentration"
+    pm_10_0:
+      name: "Particulate Matter <10.0µm Concentration"
+    pm_2_5:
+      name: "Particulate Matter <2.5µm Concentration"
+    
+    type: PMS5003T 
+    temperature:
+      name: "PMS Temperature"
+    humidity:
+      name: "PMS Humidity"
+    update_interval: 60s

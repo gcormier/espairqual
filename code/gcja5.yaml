@@ -1,0 +1,31 @@
+# Sample config for espairqual using the Panasonic SN-GCJA5 sensor
+
+esp32:
+  board: esp32-c3-devkitm-1
+
+uart:
+  rx_pin: GPIO10
+  parity: EVEN
+  baud_rate: 9600
+
+logger:
+  baud_rate: 0  # don't use serial port
+
+esphome:
+  name: pan-pm1
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+ota:
+
+sensor:
+  - platform: gcja5
+    pm_1_0:
+      name: "Particulate Matter <1.0µm Concentration"
+    pm_10_0:
+      name: "Particulate Matter <10.0µm Concentration"
+    pm_2_5:
+      name: "Particulate Matter <2.5µm Concentration"
