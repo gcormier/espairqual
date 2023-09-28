@@ -2931,12 +2931,7 @@
       (net 1 "GND") (pinfunction "GND") (pintype "passive") (tstamp d61bb322-967a-41ca-9a63-0c8d12c6d7df))
     (pad "53" smd rect (at -5.95 -2.25 90) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "passive") (tstamp 8c5a460a-4c36-4e4c-9048-4abce8532ecc))
-    (model "${KICAD7_3RD_PARTY}/3dmodels/com_github_espressif_kicad-libraries/espressif.3dshapes/ESP32-C3-MINI-1.STEP"
-      (offset (xyz -6.6 -8.37 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model "D:/kicad-greg/kicad-espressif/3dmodels/espressif.3dshapes/ESP32-C3-MINI-1.STEP"
+    (model "${KIPRJMOD}/ESP32-C3-MINI-1.STEP"
       (offset (xyz -6.6 -8.3 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
