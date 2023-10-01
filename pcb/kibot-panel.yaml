@@ -28,27 +28,12 @@ outputs:
             cols: 2
             hspace: 0mm
             vspace: 4mm
-            #hbackbone: 10
-            #vbackbone: 5
-            #hboneskip: 1
-            #vboneskip: 1
-          #page:
-            #size: A3
           tabs:
             type: full
             cutout: 2mm
-            #vwidth: 5mm
-            #vcount: 1
-            #hcount: 1
-            #hwidth: 10mm
           cuts:
             type: vcuts
             layer: F.Fab
-            #clearance: 1.5mm
-            #drill: 0.5
-            #spacing: 1mm
-            #offset: 0.2
-            #prolong: 0.5
           framing:
             type: railstb
             width: 10mm
