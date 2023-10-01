@@ -1,8 +1,12 @@
 <img src=images/espairqual_v4.png width=400px />
 
+
+
 # espairqual
 espairqual is an ESP32 based [esphome](https://esphome.io/) interface for [PMSx003](https://esphome.io/components/sensor/pmsx003.html) and [Panasonic NA-GCJA5](https://na.industrial.panasonic.com/products/sensors/air-quality-gas-flow-sensors/lineup/laser-type-pm-sensor/series/123557/model/123559) particulate matter (PM) sensors.
 
+
+<a href="https://www.tindie.com/products/gcormier/espairqual/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
 
 It offers a plug and play solution to integrate air quality monitoring with home assistant. It provides 5V to the sensor and 3.3V to the internal electronics.
