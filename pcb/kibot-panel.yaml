@@ -26,8 +26,9 @@ outputs:
         - layout:
             rows: 2
             cols: 2
-            space: 0
-            #hbackbone: 5
+            hspace: 0mm
+            vspace: 4mm
+            #hbackbone: 10
             #vbackbone: 5
             #hboneskip: 1
             #vboneskip: 1
@@ -35,21 +36,26 @@ outputs:
             #size: A3
           tabs:
             type: full
-            #width: 3
-            #vcount: 2
-            #hcount: 0
+            cutout: 2mm
+            #vwidth: 5mm
+            #vcount: 1
+            #hcount: 1
+            #hwidth: 10mm
           cuts:
             type: vcuts
-            layer: Edge.Cuts
+            layer: F.Fab
+            #clearance: 1.5mm
             #drill: 0.5
             #spacing: 1mm
             #offset: 0.2
             #prolong: 0.5
           framing:
             type: railstb
-            width: 5
-            space: 3
+            width: 10mm
+            space: 3mm
             fillet: 1mm
+            mintotalwidth: 70mm
+            mintotalheight: 70mm
           tooling:
             type: 4hole
             hoffset: 2.5
@@ -77,3 +83,4 @@ outputs:
             vjustify: center
           post:
             refillzones: true
+            millradius: 1mm
