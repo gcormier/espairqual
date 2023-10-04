@@ -33,7 +33,7 @@ outputs:
             cutout: 2mm
           cuts:
             type: vcuts
-            layer: F.Fab
+            layer: Edge.Cuts
           framing:
             type: railstb
             width: 10mm
